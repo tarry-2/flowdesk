@@ -116,3 +116,18 @@ body{-webkit-touch-callout:none;-webkit-user-select:none;-moz-user-select:none;u
 input,textarea,select,[contenteditable]{-webkit-user-select:text;user-select:text;-webkit-touch-callout:default}
 /* 로고 밑 영문 표기 */
 .logo-sub{font-size:11px;letter-spacing:2.5px;color:var(--muted);margin:3px 0 0 2px;font-weight:600;text-transform:uppercase}
+
+/* 모바일 헤더 로고 (PC는 사이드바 로고 사용 → 숨김) */
+.hdr-logo{display:none;align-items:center;margin-right:6px}
+.hdr-logo .brand-icon{width:30px;height:30px;font-size:20px;border-radius:9px}
+@media(max-width:650px){.hdr-logo{display:inline-flex}}
+/* 핑크 관리자 로그인 모달 */
+.admin-login{text-align:center;padding:4px 2px}
+.admin-login p{color:var(--muted);font-size:14px;margin:0 0 16px}
+#admin-pw{width:100%;box-sizing:border-box;padding:15px 16px;border:2px solid #ff6fb5;border-radius:13px;font-size:20px;text-align:center;letter-spacing:6px;background:#fff5fa;color:#20242b;outline:none;transition:border-color .15s,box-shadow .15s}
+#admin-pw:focus{border-color:#ff2e8a;box-shadow:0 0 0 4px rgba(255,46,138,.16)}
+#admin-pw::placeholder{letter-spacing:3px;color:#ffb3d4;font-size:15px}
+#admin-err{color:#e0245e;font-size:13px;font-weight:600;min-height:18px;margin:9px 0 4px}
+.admin-login-btn{width:100%;padding:15px;border:0;border-radius:13px;background:linear-gradient(135deg,#ff8fc7,#ff2e8a);color:#fff;font-size:16px;font-weight:800;cursor:pointer;box-shadow:0 8px 22px rgba(255,46,138,.38);transition:transform .1s}
+.admin-login-btn:active{transform:translateY(1px)}
+body.theme-dark #admin-pw{background:#3a2733;color:#fff}

@@ -110,3 +110,9 @@ body.theme-dark .invite-warn{background:#3a2626;border-color:#5a3838}
 body.theme-dark .invite-warn>p,body.theme-dark .invite-steps-list li{color:#d8b0b0}
 
 .install-btn{background:var(--accent);color:var(--on-accent,#fff);border:0;border-radius:9px;padding:8px 13px;font-size:13px;font-weight:700;cursor:pointer;white-space:nowrap}
+
+/* 텍스트 롱프레스 시 저장/공유 메뉴 방지 (입력창은 예외) */
+body{-webkit-touch-callout:none;-webkit-user-select:none;-moz-user-select:none;user-select:none}
+input,textarea,select,[contenteditable]{-webkit-user-select:text;user-select:text;-webkit-touch-callout:default}
+/* 로고 밑 영문 표기 */
+.logo-sub{font-size:11px;letter-spacing:2.5px;color:var(--muted);margin:3px 0 0 2px;font-weight:600;text-transform:uppercase}

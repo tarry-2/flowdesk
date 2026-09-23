@@ -59,3 +59,51 @@ body:not(.admin-page) :is(.asset-list,.heading p,.stat-label,.primary,.secondary
 @media(max-width:650px){#mobile-nav a{font-size:11px;min-height:48px}.text-button,.quick-grid button{font-size:13px}.heading p{font-size:14px}.primary,.secondary{min-height:44px}.admin-entry{min-height:36px;display:flex;align-items:center}.header-right .avatar{min-width:38px}.activity small,.asset-list th,.asset-name small{font-size:12px}.activity b,.activity>strong{font-size:13px}.member-layout h1{overflow-wrap:anywhere}.design-controls input[type="range"]{min-height:28px}.widget-toggles label,.switch-row{min-height:44px}.design-controls select{min-height:44px}}
 
 #sector{height:auto;min-height:48px;padding:12px 34px 12px 14px;font-size:13px;line-height:1.55;letter-spacing:-.2px;text-overflow:ellipsis;white-space:nowrap;overflow:hidden}
+
+/* ── 친구 초대 모달 ── */
+.invite-modal{display:flex;flex-direction:column;gap:12px;margin-top:2px}
+.invite-card{border-radius:15px;padding:15px 17px}
+.invite-card .ic-top{display:flex;justify-content:space-between;align-items:center;font-size:13px;color:var(--muted);margin-bottom:7px}
+.ic-copy{background:none;border:0;font-size:17px;color:var(--accent);cursor:pointer;line-height:1;padding:2px 5px;border-radius:7px}
+.invite-code{background:#fff3ec}
+.invite-code strong{font-size:29px;font-weight:800;letter-spacing:2px;color:var(--accent)}
+.invite-url{background:#eaf6ef}
+.invite-url .ic-copy{color:#2f9e6f}
+.invite-url a{font-size:14px;color:#2f9e6f;font-weight:600;word-break:break-all}
+.invite-reward{background:#fdf3e0;display:flex;gap:12px;align-items:center}
+.invite-reward .gift{width:42px;height:42px;flex-shrink:0;background:#f5a623;color:#fff;border-radius:12px;padding:10px}
+.invite-reward b{font-size:14px}
+.invite-reward p{font-size:12px;color:var(--muted);margin:3px 0 0;line-height:1.5}
+.invite-warn{background:#fdecec;border:1px solid #f6d6d6}
+.invite-warn>b{font-size:14px;color:#c0392b;display:block}
+.invite-warn>p{font-size:13px;color:#a07a7a;margin:7px 0 11px;line-height:1.6}
+.invite-steps-list{list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:8px}
+.invite-steps-list li{display:flex;align-items:center;gap:10px;font-size:13px;color:#7a5a5a}
+.invite-steps-list li span{width:21px;height:21px;flex-shrink:0;background:#c0392b;color:#fff;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:700}
+.invite-share{width:100%;margin-top:2px;font-size:15px;padding:15px}
+.invite-foot{text-align:center;font-size:12px;color:var(--muted);margin:9px 0 0}
+.theme-toggle{background:none;border:0;font-size:20px;cursor:pointer;line-height:1;padding:2px 4px}
+dialog{max-height:90vh;overflow:auto}
+
+/* ── 라이트/다크 토글: 안 어두운 다크(색 잘 보이게) ── */
+body.theme-dark{--bg:#1f2632;--surface:#2b3442;--ink:#eef2f7;--muted:#aab4c2;--line:#3d4757;--soft:#354052}
+body.theme-dark .sidebar,body.theme-dark .panel,body.theme-dark .quick,body.theme-dark .stat,body.theme-dark .product,body.theme-dark .tabs button,body.theme-dark .date,body.theme-dark dialog,body.theme-dark .form-panel{background:var(--surface);border-color:var(--line);color:var(--ink)}
+body.theme-dark header{background:#232b37e6;border-color:var(--line)}
+body.theme-dark select,body.theme-dark .field input,body.theme-dark .field select,body.theme-dark input[readonly]{background:#333d4d;border-color:var(--line);color:var(--ink)}
+body.theme-dark .nav-icon,body.theme-dark .quick-grid .nav-icon,body.theme-dark .activity .nav-icon,body.theme-dark .help-card,body.theme-dark .close,body.theme-dark .demo{background:#333d4d;color:var(--ink);border-color:var(--line)}
+body.theme-dark nav a{color:var(--muted)}
+body.theme-dark .asset-list td,body.theme-dark .activity+.activity{border-color:var(--line)}
+body.theme-dark .notice{background:#333d4d;color:var(--muted)}
+body.theme-dark #mobile-nav{background:#232b37f2;border-color:var(--line)}
+body.theme-dark .token{background:#3a3020;color:#f5a623}
+body.theme-dark .token.t1{background:#20342c;color:#4ecb93}
+body.theme-dark .token.t2{background:#23283f;color:#93a0d8}
+body.theme-dark .product.featured{background:#1a2029}
+body.theme-dark .reward-code strong{color:var(--accent)}
+/* 다크 시 초대 카드: 강조색은 유지, 배경만 어둡게 */
+body.theme-dark .invite-code{background:#3a2c1f}
+body.theme-dark .invite-url{background:#1f3329}
+body.theme-dark .invite-url a{color:#5cc999}
+body.theme-dark .invite-reward{background:#3a3222}
+body.theme-dark .invite-warn{background:#3a2626;border-color:#5a3838}
+body.theme-dark .invite-warn>p,body.theme-dark .invite-steps-list li{color:#d8b0b0}

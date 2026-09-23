@@ -108,3 +108,5 @@ body.theme-dark .invite-url a{color:#5cc999}
 body.theme-dark .invite-reward{background:#3a3222}
 body.theme-dark .invite-warn{background:#3a2626;border-color:#5a3838}
 body.theme-dark .invite-warn>p,body.theme-dark .invite-steps-list li{color:#d8b0b0}
+
+.install-btn{background:var(--accent);color:var(--on-accent,#fff);border:0;border-radius:9px;padding:8px 13px;font-size:13px;font-weight:700;cursor:pointer;white-space:nowrap}

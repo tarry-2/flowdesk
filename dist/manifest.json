@@ -1,0 +1,17 @@
+{
+  "name": "FLOW — 나의 워크스페이스",
+  "short_name": "FLOW",
+  "description": "코인·물류·창업을 한곳에서 관리하는 FLOW 워크스페이스",
+  "lang": "ko",
+  "start_url": "./?source=pwa",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "background_color": "#f7f8fa",
+  "theme_color": "#f56524",
+  "icons": [
+    { "src": "icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
+    { "src": "icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ]
+}
